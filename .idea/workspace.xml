@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ca2039a8-e64c-4596-87e8-d11b7d76fe49" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JQALearn/src/main/java/Homework1/Homework2.java" beforeDir="false" afterPath="$PROJECT_DIR$/JQALearn/src/main/java/Homework1/Homework2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +27,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2Hdzej7dzRlSzXJMIfZmaR4RS1G" />
   <component name="ProjectViewState">

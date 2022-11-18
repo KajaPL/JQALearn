@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/JQALearn.iml" filepath="$PROJECT_DIR$/.idea/JQALearn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JQALearn/JQALearn.iml" filepath="$PROJECT_DIR$/JQALearn/JQALearn.iml" />
     </modules>
   </component>
 </project>
