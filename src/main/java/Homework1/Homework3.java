@@ -6,25 +6,17 @@ public class Homework3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hey please write first integer number:");
-        double firstNum = Double.parseDouble(scanner.nextLine());
+        int firstNum = Integer.parseInt(scanner.nextLine()); //5 -5
         System.out.println("Hey please write second integer number:");
-        double secondNum = Double.parseDouble(scanner.nextLine());
+        int secondNum = Integer.parseInt(scanner.nextLine()); //6 -15
         System.out.println("Hey please write third integer number:");
-        double thirdNum = Double.parseDouble(scanner.nextLine());
+        int thirdNum = Integer.parseInt(scanner.nextLine()); // 7 -30
 
-        int firstNumCasted = (int)firstNum;//5 -5
-        int secondNumCasted = (int)secondNum;//6 -15
-        int thirdNumCasted = (int)thirdNum;//7 -30
+        int sumOfFirstAndSecond = secondNum + thirdNum;//13 -45
 
-        int firstNumNew = secondNumCasted;//6 -15
-        int secondNumNew = thirdNumCasted;//7 -30
-        int thirdNumNew = firstNumCasted;//5 -5
+        int sumAll = sumOfFirstAndSecond - firstNum;//13-5=8 -45 - -5 = -45 +5 = -40
 
-        int sumOfFirstAndSecond = firstNumNew + secondNumNew;//13 -45
-
-        int sumAll = sumOfFirstAndSecond - thirdNumNew;//13-5=8 -45 - -5 = -45 +5 = -40
-
-        System.out.printf("The diff is: %d", Math.abs(sumAll)); //8 40
+        System.out.printf("The diff is: %d", sumAll); //8 -40
     }
     /*Задача 3:
 Въведете 3 числа от клавиатурата ч1, ч2 и ч3.
