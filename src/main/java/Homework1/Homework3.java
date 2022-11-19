@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Homework3 {
     public static void main(String[] args) {
+        //test
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hey please write first integer number:");
         int firstNum = Integer.parseInt(scanner.nextLine()); //5 -5
