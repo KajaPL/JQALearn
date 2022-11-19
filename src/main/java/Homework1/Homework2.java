@@ -16,6 +16,7 @@ public class Homework2 {
         /*две по две: (n1, n2), (n3, n4) изходни данни
         едно: (n2, n1), (n4, n3)
         две: (n4, n3, n2, n1)
+        What means exactly две по две?
         */
 
         int firstIntNewValue = (int) secondDouble;
@@ -42,8 +43,8 @@ public class Homework2 {
 Разпечатайте новите им стойности.
 Направете кастване (casting) конвертиране на числата веднъж от int to double
 и после от double to int и след всяко конвертиране изведете сумата им
-n1, n2, n3, n4
-n3, n4, n1, n2
+input: n1, n2, n3, n4
+possible solutions: n3, n4, n1, n2
 n2, n1, n4, n3
 n4, n3, n2, n1
 n2, n4, n1, n3
