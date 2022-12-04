@@ -15,7 +15,6 @@ public void changeEngineFuelOperationSystem(String newEngineFuelOperationSystem)
 
 public void useFuel(double fuel){
     if (this.freeFuel < fuel) {
-       // this.freeFuel =0;
         System.out.println("Not enough free fuel!");
     } else {
         this.freeFuel = freeFuel - fuel;
