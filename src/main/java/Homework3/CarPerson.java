@@ -18,8 +18,9 @@ public class CarPerson {
         golf.isSportCar=false;
         golf.fuelTankCapacity = 50;
         golf.price = 1.111;
-        golf.freeFuel = 35;
+        golf.freeFuel = 50;
         golf.engineFuelOperationSystem = "CNG";
+        golf.useFuel(35);
 
         Scanner scanner = new Scanner(System.in);
 

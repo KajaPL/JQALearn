@@ -1,7 +1,5 @@
 package Homework3;
 
-import java.util.Scanner;
-
 public class Car {
     int year;
     double price;
@@ -14,9 +12,10 @@ public void changeEngineFuelOperationSystem(String newEngineFuelOperationSystem)
     this.engineFuelOperationSystem = newEngineFuelOperationSystem;
     System.out.println("System changed to: " + engineFuelOperationSystem);
     }
+
 public void useFuel(double fuel){
     if (this.freeFuel < fuel) {
-        this.freeFuel =0;
+       // this.freeFuel =0;
         System.out.println("Not enough free fuel!");
     } else {
         this.freeFuel = freeFuel - fuel;
