@@ -9,7 +9,7 @@ public class Car {
     String engineFuelOperationSystem;
 
     public void changeEngineFuelOperationSystem(String newEngineFuelOperationSystem){
-    this.engineFuelOperationSystem = newEngineFuelOperationSystem;
+    engineFuelOperationSystem = newEngineFuelOperationSystem;
     System.out.println("System changed to: " + engineFuelOperationSystem);
     //infiniti
     }
