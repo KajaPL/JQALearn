@@ -10,7 +10,7 @@ public class CarPerson {
         infiniti.isSportCar=true;
         infiniti.fuelTankCapacity = 100;
         infiniti.freeFuel = 53;
-        infiniti.engineFuelOperationSystem = "Diesel";
+        infiniti.engineFuelOperationSystem = "diesel";
 
 
         Car golf = new Car ();
@@ -19,18 +19,19 @@ public class CarPerson {
         golf.fuelTankCapacity = 50;
         golf.price = 1.111;
         golf.freeFuel = 50;
-        golf.engineFuelOperationSystem = "CNG";
+        golf.engineFuelOperationSystem = "cng";
         golf.useFuel(35);
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please write engine fuel. You can choose only one: petrol, cng, diesel, electricity, biofuels:");
+        System.out.println("\nPlease write new engine fuel. You can write for example - petrol, cng, electricity, biofuels:");
         String newEngineFuelOperationSystem = scanner.nextLine();
         infiniti.changeEngineFuelOperationSystem(newEngineFuelOperationSystem);
 
-        System.out.println("Please write a double num:");
+        System.out.println("\nPlease write a double num, which reduces free fuel:");
         double fuelChanged = Double.parseDouble(scanner.nextLine());
         golf.useFuel(fuelChanged);
+
 
         infiniti.printingCars();
         golf.printingCars();

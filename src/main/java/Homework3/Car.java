@@ -8,28 +8,34 @@ public class Car {
     double freeFuel;
     String engineFuelOperationSystem;
 
-public void changeEngineFuelOperationSystem(String newEngineFuelOperationSystem){
+    public void changeEngineFuelOperationSystem(String newEngineFuelOperationSystem){
     this.engineFuelOperationSystem = newEngineFuelOperationSystem;
     System.out.println("System changed to: " + engineFuelOperationSystem);
+    //infiniti
     }
 
-public void useFuel(double fuel){
+    public void useFuel(double fuel){
+         /*There are two options to consider how it should work:
+        a)we have free fuel 50, minus 35, left 15. I'll reduce by 16, so it is -1. So I'll reduce and write zero, because can't be -1 or;
+        b)we have free fuel 50, minus 35, left 15. I'll reduce by 16, so it is -1. So I'll not reduce at all, because can't be -1
+        I choose b) option */
     if (this.freeFuel < fuel) {
+        //freeFuel = 0;
         System.out.println("Not enough free fuel!");
     } else {
-        this.freeFuel = freeFuel - fuel;
-        System.out.println("Free fuel changed to:" + this.freeFuel);
+        freeFuel = freeFuel - fuel;
+        System.out.printf("Free fuel changed to: %.2f\n", freeFuel);
     }
-}
+    //golf
+    }
 
-public void printingCars () {
-    System.out.println("\n\nManufactured date: " + year
-            + "\nPrice is: " + price
-            + "\nThis is sport car: " + isSportCar
-            + "\nFuel tank capacity is:" + fuelTankCapacity
-            + "\nFree fuel is:" + freeFuel
-            + "\nEngine fuel operations system is:" + engineFuelOperationSystem);
-}
+    public void printingCars () {
+
+    System.out.printf("\n\nManufactured date: %d \nPrice is: %.3f \nThis is sport car: %b" +
+            "\nFuel tank capacity is: %d \nFree fuel is: %.2f \nEngine fuel operations system is: %s"
+            , year, price, isSportCar, fuelTankCapacity, freeFuel, engineFuelOperationSystem);
+
+    }
 
 /*Създайте клас Car, който представя кола.
 Класът да има следните полета:
