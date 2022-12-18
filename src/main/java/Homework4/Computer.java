@@ -27,7 +27,10 @@ public class Computer {
     }
 }
 
-//  return Double.compare(compare.price, this.price);
+/* Computer compare can be replaced with
+return Double.compare(compare.price, this.price);
+ */
+
     /*Създайте клас Computer със следните полета от тип:
 int year,
 double price,
