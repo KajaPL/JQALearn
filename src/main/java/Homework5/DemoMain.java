@@ -15,7 +15,7 @@ public class DemoMain {
         humans[3] = new Student("Angelika", 33, false, 4.55);
         humans[4] = new Employee("Mitko", 50, true, 66.66);
         humans[5] = new Employee("Iga", 6, false, 99.99);
-        /* There wes error NullPointerException, because array is 10, but items are 6, and four are null.
+        /* There was error NullPointerException, because array is 10, but items are 6, and four are null.
         So in length I made minus 4... */
 
         for (int i = 0; i <= humans.length-4; i++) {
@@ -29,6 +29,7 @@ public class DemoMain {
                 ((Employee) humans[i]).calculateOvertime();
             }
         }
+
     }
 }
 
