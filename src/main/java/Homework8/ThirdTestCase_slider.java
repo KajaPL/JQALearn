@@ -5,9 +5,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class SecondTestCase_register {
+public class ThirdTestCase_slider {
     public static void main(String[] args) {
-        //Verify that register btn - can be clicked
+        //Verify that the whole div of slider is here
 
         //path of the browser driver
         System.setProperty("webdriver.chrome.driver", "/Users/kajam/Downloads/chromedriver_mac_arm64 2/chromedriver");
@@ -17,15 +17,11 @@ public class SecondTestCase_register {
         driver.manage().window().maximize();
         //launch site
         driver.get("http://arenamody.pl");
-        //scroll little bit down
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("scrollBy(0, 200)");
         //find elements
-        driver.findElement(By.xpath("/html/body[@class='single pl wmbar']/div[@class='overflow-hidden']/div[@class='slider']/div[@class='play-wrap']/a[@class='register-btn play-btn']")).click();
+        String slider = driver.findElement(By.className("slider")).getTagName();
         //verify result
-        WebElement popup = driver.findElement(By.id("register"));
-        popup.isDisplayed();
-        if (popup.isDisplayed() == true) {
+       System.out.println(slider);
+        if (slider.equalsIgnoreCase("div")) {
             System.out.println("test success");
         } else {
             System.out.println("test fail");
