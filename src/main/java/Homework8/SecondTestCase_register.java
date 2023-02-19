@@ -17,6 +17,7 @@ public class SecondTestCase_register {
         driver.manage().window().maximize();
         //launch site
         driver.get("http://arenamody.pl");
+        //scroll little bit down
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("scrollBy(0, 200)");
         //find elements
