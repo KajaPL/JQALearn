@@ -12,10 +12,13 @@ public class exampleFromDesi {
        */
 
         // System.setProperty("webdriver.chrome.driver", "F:\\drivers\\chromedriver.exe");
+        //path of the browser driver
         System.setProperty("webdriver.chrome.driver", "/Users/kajam/Downloads/chromedriver_mac_arm64 2/chromedriver");
-
+        //Webdriver instance
         ChromeDriver driver = new ChromeDriver();
+        //launch site
         driver.get("http://www.facebook.com/");
+        //find elements
         WebElement element = driver.findElement(By.xpath("//input[@name='email']"));
         element.sendKeys("abc@gmail.com");
         element = driver.findElement(By.xpath("//input[@name='pass']"));
@@ -28,5 +31,9 @@ public class exampleFromDesi {
 
         button = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]/button"));
         button.click();
+        //verify result
+
+        //close browser
+        driver.close();
     }
 }
