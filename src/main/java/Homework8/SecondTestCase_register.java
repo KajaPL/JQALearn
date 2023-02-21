@@ -21,11 +21,11 @@ public class SecondTestCase_register {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("scrollBy(0, 200)");
         //find elements
-        driver.findElement(By.xpath("/html/body[@class='single pl wmbar']/div[@class='overflow-hidden']/div[@class='slider']/div[@class='play-wrap']/a[@class='register-btn play-btn']")).click();
+       driver.findElement(By.className("register-btn")).click();
         //verify result
         WebElement popup = driver.findElement(By.id("register"));
         popup.isDisplayed();
-        if (popup.isDisplayed() == true) {
+        if (popup.isDisplayed()) {
             System.out.println("test success");
         } else {
             System.out.println("test fail");
