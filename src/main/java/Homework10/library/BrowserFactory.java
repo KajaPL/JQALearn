@@ -52,4 +52,11 @@ public class BrowserFactory {
         }
         return driver;
     }
+
+    public static void closeAllDriver() {
+        for (String key : drivers.keySet()) {
+            drivers.get(key).close();
+            drivers.get(key).quit();
+        }
+    }
 }
