@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -21,6 +23,11 @@ public class GatePF {
 
    //click on login btn
     public void clickLoginBtn() {
-        loginBtn.click();
+       // loginBtn.click();
+        Actions builder = new Actions(driver);
+        Action click = builder
+                .click(loginBtn)
+                .build();
+        click.perform();
     }
 }
