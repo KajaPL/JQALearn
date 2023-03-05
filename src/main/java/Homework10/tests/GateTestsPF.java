@@ -42,7 +42,7 @@ public class GateTestsPF {
     @AfterClass public static void afterClass() throws Exception{
 
         System.out.println("This is @AfterClass");
-      //  driver.close();
+        driver.close();
     }
 
     @Test
