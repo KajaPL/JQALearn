@@ -57,5 +57,6 @@ public class GateTestsPF extends BrowserFactory{
         boolean isPopupVisible = driver.findElement(By.id("login")).isDisplayed();
         System.out.println(isPopupVisible);
         Assert.assertTrue(isPopupVisible);
+
     }
 }
