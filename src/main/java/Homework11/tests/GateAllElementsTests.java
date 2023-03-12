@@ -1,7 +1,7 @@
 package Homework11.tests;
 
 import Homework11.library.BrowserFactory;
-import Homework11.pages.GatePF;
+import Homework11.pages.GateAllElementsPF;
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,11 +10,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
-public class GateTestsPF extends BrowserFactory{
+public class GateAllElementsTests extends BrowserFactory{
     static WebDriver driver;
-    GatePF objGatePf;
+    GateAllElementsPF objGateAllElementsPf;
 
     @BeforeClass
     public static void beforeClass() throws Exception{
@@ -46,8 +45,8 @@ public class GateTestsPF extends BrowserFactory{
     @Test
     public void verifyThatLoginBtnCanBeClicked(){
         System.out.println("This is @Test 1");
-        objGatePf = new GatePF(driver);
-        objGatePf.clickLoginBtn();
+        objGateAllElementsPf = new GateAllElementsPF(driver);
+        objGateAllElementsPf.clickLoginBtn();
         //explicit wait
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         //expected condition for wait
@@ -57,6 +56,8 @@ public class GateTestsPF extends BrowserFactory{
         boolean isPopupVisible = driver.findElement(By.id("login")).isDisplayed();
         System.out.println(isPopupVisible);
         Assert.assertTrue(isPopupVisible);
-
     }
+    //TO DO
+   // @Test
+   // public void
 }
