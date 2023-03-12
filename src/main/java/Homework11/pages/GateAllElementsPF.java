@@ -7,12 +7,13 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class GatePF {
+public class GateAllElementsPF {
+    // HERE I'LL CHECK IF ALL ELEMENTS ARE VISIBLE AND/OR CLICKABLE ON THE GATE
     WebDriver driver;
     @FindBy(id = "login-btn")
     WebElement loginBtn;
 
-    public GatePF(WebDriver driver) {
+    public GateAllElementsPF(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
