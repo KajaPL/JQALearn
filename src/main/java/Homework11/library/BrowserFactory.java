@@ -2,6 +2,7 @@ package Homework11.library;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -43,12 +44,16 @@ public class BrowserFactory {
                     //"C:\\Users\\abc\\Desktop\\Server\\ChromeDriver.exe");
 
                     // path of the browser driver on MAC
-                    System.setProperty("webdriver.chrome.driver", "/Users/kajam/Downloads/chromedriver_mac_arm64 2/chromedriver");
-
-                    driver = new ChromeDriver();
+                    System.setProperty("webdriver.chrome.driver", "/opt/homebrew/Caskroom/chromedriver/111.0.5563.64/chromedriver");
+                    ChromeOptions co = new ChromeOptions();
+                    co.addArguments("--remote-allow-origins=*");
+                    //WebDriver driver = new ChromeDriver(co);
+                    driver = new ChromeDriver(co);
                     drivers.put("Chrome", driver);
                 }
                 break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + browserName);
         }
         return driver;
     }
