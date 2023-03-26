@@ -35,7 +35,8 @@ public class GateAllElementsTests extends BrowserFactory{
     public void after() {
         System.out.println("This is @After");
     }
-    @AfterClass public static void afterClass() throws Exception{
+    @AfterClass
+    public static void afterClass() throws Exception{
 
         System.out.println("This is @AfterClass");
         BrowserFactory.closeAllDriver();
@@ -57,18 +58,4 @@ public class GateAllElementsTests extends BrowserFactory{
         System.out.println(isPopupVisible);
         Assert.assertTrue(isPopupVisible);
     }
- /*  @Test
-    public void IlIANAverifyThatUsernameFieldCanBeClicked() {
-        System.out.println("This is @Test 2");
-        objGateAllElementsPf = new GateAllElementsPF(driver);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
-        WebElement usernameField = driver.findElement(By.id("username"));
-        boolean isUsernameField =  driver.findElement(By.id("username")).isDisplayed();
-        System.out.println(isUsernameField);
-        Assert.assertTrue(isUsernameField);
-    }*/
-    //TO DO
-   // @Test
-   // public void
 }
