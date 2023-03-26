@@ -5,7 +5,7 @@ Feature: Login
   The user should be shown an error text when the username and the password are incorrect.
 
     Given I am on the login page
-    When I log in with a valid username as "<username>"and valid password as "<password>"
+    When I log in with a valid  "<username>" and valid "<password>"
     And I click on login button
     Then I should be successfully authorized in system
     Examples:
