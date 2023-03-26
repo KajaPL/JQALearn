@@ -1,4 +1,5 @@
 package testRunner;
+import PageObjectModels.Hooks;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.BeforeClass;
@@ -18,6 +19,6 @@ import java.util.Map;
         monochrome = true
 )
 
-public class TestRunner extends Hooks{
+public class TestRunner extends Hooks {
 
 }
