@@ -11,11 +11,11 @@ public class Hooks extends BrowserFactory {
     @Before
     public void setUp() {
         //get browser
-        driver = BrowserFactory.getBrowser("Chrome");
+       // driver = BrowserFactory.getBrowser("Chrome");
         //maximize window
         driver.manage().window().maximize();
         //launch site
-        driver.get("https://www.saucedemo.com");
+      //  driver.get("https://www.saucedemo.com");
     }
 
     @After
