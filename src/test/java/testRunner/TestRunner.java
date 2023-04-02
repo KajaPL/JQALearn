@@ -19,6 +19,6 @@ import java.util.Map;
         monochrome = true
 )
 
-public class TestRunner extends Hooks {
+public class TestRunner {
 
 }
