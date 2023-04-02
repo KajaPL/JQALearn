@@ -7,11 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
      WebDriver driver;
-    @FindBy(css = "#user-name")
+    @FindBy(id = "user-name")
     WebElement standardUser;
-    @FindBy(css = "#password")
+    @FindBy(id = "password")
     WebElement secretSauce;
-    @FindBy(css = "#login-button")
+    @FindBy(id = "login-button")
     WebElement loginButton;
 
     public LoginPage(WebDriver driver){
