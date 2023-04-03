@@ -46,7 +46,8 @@ public class LoginPage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         //expected condition for wait
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login-button")));
-
+        boolean isLoginBtnVisible = loginBtn.isDisplayed();
+        Assert.assertTrue(isLoginBtnVisible);
     }
     public void clickLoginButton(){
         Actions builder = new Actions(driver);
