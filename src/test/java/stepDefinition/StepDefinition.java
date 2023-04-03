@@ -24,15 +24,21 @@ public class StepDefinition extends Hooks {
         welcomePage = new WelcomePage(driver);
     }
     @After
+    public void after() {
+        BrowserFactory.closeAllDriver();
+    }
 
     @Given("I am on the login page")
     public void iAmOnTheLoginPage() {
-        driver.get("https://www.saucedemo.com");
+        driver.get("https://www.saucedemo.com/");
+        loginPage.validateURL("https://www.saucedemo.com/");
+        loginPage.validateTitle("Swag Labs");
     }
 
     @When("I log in with a valid  username and valid password")
     public void iLogInWithAValidAndValid() {
-        loginPage.enterNameAndPassword("standard_user", "secret_sauce");
+        loginPage.waitForLoginButton();
+        loginPage.enterUsernameAndPassword("standard_user", "secret_sauce");
     }
 
     @And("I click on login button")
@@ -42,6 +48,7 @@ public class StepDefinition extends Hooks {
 
     @Then("I should be successfully authorized in system")
     public void iShouldBeSuccessfullyAuthorizedInSystem() throws Exception {
+        welcomePage.validateURL("https://www.saucedemo.com/inventory.html");
         welcomePage.productList();
     }
 }
