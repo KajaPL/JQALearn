@@ -9,7 +9,7 @@ public class Hooks extends BrowserFactory {
     static WebDriver driver;
 
     @Before
-    public void setUp() {
+    public void setUp(){
         //get browser
        // driver = BrowserFactory.getBrowser("Chrome");
         //maximize window
