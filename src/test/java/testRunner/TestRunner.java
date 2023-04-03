@@ -13,7 +13,7 @@ import java.util.Map;
 @RunWith(Cucumber.class)
 @CucumberOptions(strict = true,
         features = {"src/test/resources/featureFiles/SwagLabsLogin.feature"},
-        glue = { "stepDefinition", "testRunner" },
+        glue = {"stepDefinition"},
         tags = {"@login"},
         plugin = {"pretty", "html:target/cucumber-reports"},
         monochrome = true
