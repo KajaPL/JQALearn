@@ -6,6 +6,6 @@ Feature: Login
   #The user should be shown an error text when the username and the password are incorrect.
 
     Given I am on the login page
-    When I log in with a valid  username and valid password
+    When I log in with a username and password
     And I click on login button
     Then I should be successfully authorized in system
