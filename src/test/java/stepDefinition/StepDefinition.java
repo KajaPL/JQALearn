@@ -35,8 +35,8 @@ public class StepDefinition extends Hooks {
         loginPage.validateTitle("Swag Labs");
     }
 
-    @When("I log in with a valid  username and valid password")
-    public void iLogInWithAValidAndValid() {
+    @When("I log in with a username and password")
+    public void iLogInWithAUsernameAndPassword() {
         loginPage.waitForLoginButton();
         loginPage.enterUsernameAndPassword("standard_user", "secret_sauce");
     }
